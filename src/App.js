@@ -44,9 +44,11 @@ function App() {
               <div className="bg-cyan-light_gray relative">
                 <DollarIcon className="absolute top-2.5 left-3" />
                 <input 
-                  type="number" className="text-right bg-cyan-light_gray w-full rounded py-2 font-semibold px-4"
+                  type="number" 
+                  className="text-right bg-cyan-light_gray w-full rounded py-2 font-semibold px-4"
                   value={bill}
                   onChange={(e) => {setBill(e.target.value)}}
+                  min="0"
                 />
               </div>
             </div>
@@ -65,7 +67,7 @@ function App() {
                   />
                 ) : (
                   <button 
-                    className="bg-cyan-light_gray text-center placeholder-cyan-dark font-bold text-cyan-dark_gray"
+                    className="bg-cyan-light_gray text-center placeholder-cyan-dark font-bold text-cyan-dark_gray custom-button"
                     onClick={() => setShowCustom(true)}>Custom</button>
                 )}
               </div>
@@ -78,6 +80,7 @@ function App() {
                   type="number" className="bg-cyan-light_gray w-full py-2 rounded text-right font-semibold px-4" 
                   onChange={(e) => {setPeople(e.target.value)}}
                   value={people}
+                  min="0"
                 />
               </div>
             </div>

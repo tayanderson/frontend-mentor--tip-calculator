@@ -10,6 +10,9 @@ module.exports = {
           dark_gray: 'hsl(186, 14%, 43%)',
           light_gray: 'hsl(185, 41%, 84%)'
         }
+      },
+      outline: {
+        cyan: '2px solid hsl(172, 67%, 45%)',
       }
     },
   },

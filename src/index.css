@@ -10,3 +10,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+input[type="number"]:focus {
+ @apply outline-cyan;
+}
+
+button:not(.custom-button):hover {
+  @apply bg-cyan-strong duration-75;
+}
