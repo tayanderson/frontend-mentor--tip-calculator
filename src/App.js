@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react'
 import './App.css';
+import { ReactComponent as Logo } from './logo.svg';
+import { ReactComponent as DollarIcon } from './icon-dollar.svg';
+import { ReactComponent as PersonIcon } from './icon-person.svg';
 
 function App() {
   const [bill, setBill] = useState(0)
@@ -31,18 +34,21 @@ function App() {
   return (
     <div className="h-screen bg-cyan-light_gray py-10">
       <header className="w-full py-12">
-        <img src="./logo.svg" className="mx-auto" alt="Splitter" />
+        <Logo className="mx-auto" />
       </header>
       <main>
         <div className="bg-white rounded-xl flex flex-col md:flex-row mx-auto max-w-screen-lg p-6 gap-8">
           <div className="flex-1 flex flex-col gap-8">
             <div>
               <span className="block text-cyan-dark_gray font-semibold mb-2">Bill</span>
-              <input 
-                type="number" className="text-right bg-cyan-light_gray w-full rounded py-2 font-semibold px-4"
-                value={bill}
-                onChange={(e) => {setBill(e.target.value)}}
-              />
+              <div className="bg-cyan-light_gray relative">
+                <DollarIcon className="absolute top-2.5 left-3" />
+                <input 
+                  type="number" className="text-right bg-cyan-light_gray w-full rounded py-2 font-semibold px-4"
+                  value={bill}
+                  onChange={(e) => {setBill(e.target.value)}}
+                />
+              </div>
             </div>
             <div className="w-full">
               <span className="block text-cyan-dark_gray font-semibold mb-2">Select Tip %</span>
@@ -66,11 +72,14 @@ function App() {
             </div>
             <div>
               <span className="block text-cyan-dark_gray font-semibold mb-2">Number of People</span>
-              <input 
-                type="number" className="bg-cyan-light_gray w-full py-2 rounded text-right font-semibold px-4" 
-                onChange={(e) => {setPeople(e.target.value)}}
-                value={people}
-              />
+              <div className="bg-cyan-light_gray relative">
+                <PersonIcon className="absolute top-2.5 left-3" />
+                <input 
+                  type="number" className="bg-cyan-light_gray w-full py-2 rounded text-right font-semibold px-4" 
+                  onChange={(e) => {setPeople(e.target.value)}}
+                  value={people}
+                />
+              </div>
             </div>
           </div>
           <div className="bg-cyan-dark flex-1 rounded p-8 flex flex-col justify-between">
