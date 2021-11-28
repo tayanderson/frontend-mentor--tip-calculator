@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/frontend-mentor--tip-calculator/static/css/main.80a6e2a4.chunk.css",
+    "main.js": "/frontend-mentor--tip-calculator/static/js/main.d2459c2e.chunk.js",
+    "main.js.map": "/frontend-mentor--tip-calculator/static/js/main.d2459c2e.chunk.js.map",
+    "runtime-main.js": "/frontend-mentor--tip-calculator/static/js/runtime-main.0d00e53d.js",
+    "runtime-main.js.map": "/frontend-mentor--tip-calculator/static/js/runtime-main.0d00e53d.js.map",
+    "static/js/2.a3cb22df.chunk.js": "/frontend-mentor--tip-calculator/static/js/2.a3cb22df.chunk.js",
+    "static/js/2.a3cb22df.chunk.js.map": "/frontend-mentor--tip-calculator/static/js/2.a3cb22df.chunk.js.map",
+    "index.html": "/frontend-mentor--tip-calculator/index.html",
+    "static/css/main.80a6e2a4.chunk.css.map": "/frontend-mentor--tip-calculator/static/css/main.80a6e2a4.chunk.css.map",
+    "static/js/2.a3cb22df.chunk.js.LICENSE.txt": "/frontend-mentor--tip-calculator/static/js/2.a3cb22df.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0d00e53d.js",
+    "static/js/2.a3cb22df.chunk.js",
+    "static/css/main.80a6e2a4.chunk.css",
+    "static/js/main.d2459c2e.chunk.js"
+  ]
+}
