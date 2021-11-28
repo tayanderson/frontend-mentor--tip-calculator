@@ -40,7 +40,7 @@ function App() {
         <div className="bg-white rounded-xl flex flex-col md:flex-row mx-auto max-w-screen-lg p-6 gap-8">
           <div className="flex-1 flex flex-col gap-8">
             <div>
-              <span className="block text-cyan-dark_gray font-semibold mb-2">Bill</span>
+              <label for="bill" className="block text-cyan-dark_gray font-semibold mb-2">Bill</label>
               <div className="bg-cyan-light_gray relative">
                 <DollarIcon className="absolute top-2.5 left-3" />
                 <input 
@@ -49,6 +49,7 @@ function App() {
                   value={bill}
                   onChange={(e) => {setBill(e.target.value)}}
                   min="0"
+                  id="bill"
                 />
               </div>
             </div>
@@ -73,7 +74,7 @@ function App() {
               </div>
             </div>
             <div>
-              <span className="block text-cyan-dark_gray font-semibold mb-2">Number of People</span>
+              <label for="People" className="block text-cyan-dark_gray font-semibold mb-2">Number of People</label>
               <div className="bg-cyan-light_gray relative">
                 <PersonIcon className="absolute top-2.5 left-3" />
                 <input 
@@ -81,6 +82,7 @@ function App() {
                   onChange={(e) => {setPeople(e.target.value)}}
                   value={people}
                   min="0"
+                  id="people"
                 />
               </div>
             </div>
