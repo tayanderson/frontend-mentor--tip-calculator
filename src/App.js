@@ -16,10 +16,7 @@ function App() {
     setPeople(1)
     setShowCustom(false)
   }
-
-  // const tip = people > 0 ? (bill * (tipPercentage * 0.01)) / people : 0
-  // const total = people > 0 ? (+bill + +tipPercentage) / people : 0
-
+  
   useEffect(() => {
     let tipPerPerson = (bill * (tipPercentage * 0.01)) / people
     let totalPerPerson = (bill / people) + tipPerPerson
